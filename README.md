@@ -14,7 +14,6 @@ Corporate website for **ZeeInx**, a UK-based global serialization and compliance
 | Animations | Framer Motion |
 | UI Components | shadcn/ui (Radix UI) |
 | Icons | Lucide React |
-| Database | Supabase (PostgreSQL) |
 | Fonts | Inter (Google Fonts) |
 | Deployment | Netlify |
 
@@ -26,21 +25,11 @@ Corporate website for **ZeeInx**, a UK-based global serialization and compliance
 
 - Node.js 18+
 - npm or yarn
-- A Supabase project (already provisioned for this setup)
 
 ### Installation
 
 ```bash
 npm install
-```
-
-### Environment Variables
-
-Create a `.env.local` file in the project root with the following variables:
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
 ### Development
@@ -87,7 +76,7 @@ npm run typecheck
 │   ├── Process.tsx         # 4-step delivery process timeline
 │   ├── CTASection.tsx      # Call-to-action with contact details
 │   ├── ContactInfoCards.tsx # 3-card contact info row
-│   ├── ContactForm.tsx     # Validated contact form with Supabase integration
+│   ├── ContactForm.tsx     # Validated contact form (mailto — no backend)
 │   └── UI/
 │       ├── Button.tsx      # Primary / secondary / outline button variants
 │       ├── ServiceCard.tsx # Hover-animated service card
@@ -96,7 +85,6 @@ npm run typecheck
 │
 ├── lib/
 │   ├── constants.ts        # All copy, navigation, service data, contact info
-│   ├── supabase.ts         # Supabase client singleton
 │   └── utils.ts            # Tailwind class merge utility (cn)
 │
 ├── tailwind.config.ts      # Extended Tailwind config with brand colors
@@ -144,25 +132,7 @@ All sections use `py-20 lg:py-28` with a `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
 ### Contact (`/contact`)
 - **Hero Banner** — Page header with dark gradient background
 - **Contact Info Cards** — Phone, Email, Office Address (dark Navy cards)
-- **Contact Form** — Name, Email, Message fields with real-time validation
-  - Submissions stored in Supabase `contact_submissions` table
-  - Success/error feedback states
-
----
-
-## Database
-
-### `contact_submissions` table
-
-| Column | Type | Notes |
-|---|---|---|
-| `id` | uuid | Auto-generated primary key |
-| `name` | text | Submitter's full name |
-| `email` | text | Submitter's email address |
-| `message` | text | Message body |
-| `created_at` | timestamptz | Submission timestamp |
-
-Row Level Security (RLS) is enabled. Anonymous users can only INSERT; no public read access.
+- **Contact Form** — Name, Email, Message fields with validation; on submit opens the visitor’s email client with a prefilled message (`mailto:`)
 
 ---
 
@@ -170,7 +140,7 @@ Row Level Security (RLS) is enabled. Anonymous users can only INSERT; no public 
 
 This project is configured for Netlify deployment using `@netlify/plugin-nextjs`.
 
-Push to your connected repository branch to trigger an automatic deploy. Ensure environment variables are configured in the Netlify project settings.
+Push to your connected repository branch to trigger an automatic deploy.
 
 ---
 

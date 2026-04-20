@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Send, CircleCheck as CheckCircle2 } from 'lucide-react';
-import { supabase } from '@/lib/supabase';
+import { CONTACT_INFO } from '@/lib/constants';
 import FormInput, { FormTextarea } from '@/components/shared/FormInput';
 import Button from '@/components/shared/Button';
 
@@ -44,9 +44,7 @@ export default function ContactForm() {
     message: '',
   });
   const [errors, setErrors] = useState<FormErrors>({});
-  const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [serverError, setServerError] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -58,9 +56,8 @@ export default function ContactForm() {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setServerError('');
 
     const validationErrors = validate(values);
     if (Object.keys(validationErrors).length > 0) {
@@ -68,25 +65,17 @@ export default function ContactForm() {
       return;
     }
 
-    setIsLoading(true);
-    try {
-      const { error } = await supabase.from('contact_submissions').insert({
-        name: values.name.trim(),
-        email: values.email.trim(),
-        message: values.message.trim(),
-      });
+    const name = values.name.trim();
+    const email = values.email.trim();
+    const message = values.message.trim();
+    const subject = encodeURIComponent(`Website contact: ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`
+    );
+    window.location.href = `mailto:${CONTACT_INFO.email}?subject=${subject}&body=${body}`;
 
-      if (error) throw error;
-
-      setIsSuccess(true);
-      setValues({ name: '', email: '', message: '' });
-    } catch {
-      setServerError(
-        'Something went wrong. Please try again or email us directly at info@zeeinx.com'
-      );
-    } finally {
-      setIsLoading(false);
-    }
+    setIsSuccess(true);
+    setValues({ name: '', email: '', message: '' });
   };
 
   if (isSuccess) {
@@ -100,10 +89,17 @@ export default function ContactForm() {
         <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mb-5">
           <CheckCircle2 size={32} className="text-green-500" />
         </div>
-        <h3 className="text-xl font-bold text-navy-900 mb-2">Message Sent!</h3>
+        <h3 className="text-xl font-bold text-navy-900 mb-2">Ready to send</h3>
         <p className="text-gray-500 text-sm leading-relaxed max-w-sm mb-6">
-          Thank you for reaching out. A member of our team will be in touch within
-          24 hours.
+          Your email app should open with your message. Send it from there, or
+          reach us directly at{' '}
+          <a
+            href={`mailto:${CONTACT_INFO.email}`}
+            className="text-cyan-500 hover:text-cyan-600"
+          >
+            {CONTACT_INFO.email}
+          </a>
+          .
         </p>
         <button
           onClick={() => setIsSuccess(false)}
@@ -153,27 +149,7 @@ export default function ContactForm() {
           required
         />
 
-        <AnimatePresence>
-          {serverError && (
-            <motion.div
-              className="p-4 rounded-xl bg-red-50 border border-red-100 text-sm text-red-600"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              role="alert"
-            >
-              {serverError}
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <Button
-          type="submit"
-          variant="primary"
-          size="lg"
-          isLoading={isLoading}
-          className="mt-1"
-        >
+        <Button type="submit" variant="primary" size="lg" className="mt-1">
           <Send size={16} aria-hidden="true" />
           Send Message
         </Button>
