@@ -3,7 +3,7 @@ import { Cpu } from 'lucide-react';
 import ServicePageLayout, { type ServiceDetail } from '@/components/shared/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'Serialization Consulting | ZeeInx',
+  title: 'Serialization Consulting | Zeeinx',
   description:
     'Expert pharmaceutical serialization consulting — from hardware selection and system design to full deployment, integration, and team enablement.',
 };
@@ -15,7 +15,7 @@ const service: ServiceDetail = {
   heroDescription:
     'From initial scoping through to live system deployment, our serialization consultants bring deep technical and regulatory expertise to every stage of your project.',
   overview:
-    'Pharmaceutical serialization is one of the most complex regulatory undertakings for any manufacturer or marketer. ZeeInx provides hands-on serialization consulting that bridges the gap between regulatory requirements and operational reality. Our consultants work directly within your environment — alongside your IT, operations, quality, and supply chain teams — to design, implement, and validate serialization systems that are fit for purpose, scalable, and audit-ready. Whether you are starting from scratch, upgrading legacy systems, or remediating failed implementations, we provide the expertise and project management to deliver.',
+    'Pharmaceutical serialization is one of the most complex regulatory undertakings for any manufacturer or marketer. Zeeinx provides hands-on serialization consulting that bridges the gap between regulatory requirements and operational reality. Our consultants work directly within your environment — alongside your IT, operations, quality, and supply chain teams — to design, implement, and validate serialization systems that are fit for purpose, scalable, and audit-ready. Whether you are starting from scratch, upgrading legacy systems, or remediating failed implementations, we provide the expertise and project management to deliver.',
   icon: <Cpu size={22} />,
   highlights: [
     {

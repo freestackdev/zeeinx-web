@@ -3,7 +3,7 @@ import { FileCheck } from 'lucide-react';
 import ServicePageLayout, { type ServiceDetail } from '@/components/shared/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'L4 System Validation | ZeeInx',
+  title: 'L4 System Validation | Zeeinx',
   description:
     'Rigorous Level 4 enterprise serialization system validation following GAMP 5 guidelines — IQ, OQ, PQ documentation and regulatory submission-ready validation packages.',
 };
@@ -15,7 +15,7 @@ const service: ServiceDetail = {
   heroDescription:
     'Delivering rigorous, audit-ready Level 4 system validation packages for pharmaceutical serialization platforms — IQ, OQ, PQ documentation built to withstand regulatory scrutiny.',
   overview:
-    'The Level 4 (L4) enterprise serialization system — the site-level or enterprise serialization platform responsible for orchestrating serialization data across the manufacturing site, managing the NMVS connectivity layer, and interfacing with ERP and supply chain systems — is a GxP-regulated computer system requiring formal validation under GAMP 5 principles. ZeeInx provides complete L4 system validation services, from validation strategy and risk assessment through to executed IQ/OQ/PQ protocols and final validation summary reports. Our validation consultants have direct experience with all major L4 serialization platforms and the regulatory expectations of EU, US, and global health authorities.',
+    'The Level 4 (L4) enterprise serialization system — the site-level or enterprise serialization platform responsible for orchestrating serialization data across the manufacturing site, managing the NMVS connectivity layer, and interfacing with ERP and supply chain systems — is a GxP-regulated computer system requiring formal validation under GAMP 5 principles. Zeeinx provides complete L4 system validation services, from validation strategy and risk assessment through to executed IQ/OQ/PQ protocols and final validation summary reports. Our validation consultants have direct experience with all major L4 serialization platforms and the regulatory expectations of EU, US, and global health authorities.',
   icon: <FileCheck size={22} />,
   highlights: [
     {

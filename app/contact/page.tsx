@@ -6,9 +6,9 @@ import ContactInfoCards from '@/components/ContactInfoCards';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | ZeeInx Serialization Consulting',
+  title: 'Contact Us | Zeeinx Serialization Consulting',
   description:
-    'Get in touch with ZeeInx to discuss your pharmaceutical serialization and compliance requirements. UK-based experts available for consultation.',
+    'Get in touch with Zeeinx to discuss your pharmaceutical serialization and compliance requirements. UK-based experts available for consultation.',
 };
 
 export default function ContactPage() {
@@ -30,7 +30,7 @@ export default function ContactPage() {
               id="contact-page-heading"
               className="text-4xl sm:text-5xl font-bold text-white tracking-tight mb-5"
             >
-              Contact ZeeInx
+              Contact Zeeinx
             </h1>
             <p className="text-white/60 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
               Ready to discuss your serialization and compliance requirements? Our

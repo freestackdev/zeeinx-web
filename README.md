@@ -1,6 +1,6 @@
-# ZeeInx | Serialization Consulting
+# Zeeinx | Serialization Consulting
 
-Corporate website for **ZeeInx**, a UK-based global serialization and compliance consulting firm serving the pharmaceutical and life sciences sector.
+Corporate website for **Zeeinx**, a UK-based global serialization and compliance consulting firm serving the pharmaceutical and life sciences sector.
 
 ---
 
@@ -70,7 +70,7 @@ npm run typecheck
 │   ├── Navbar.tsx          # Sticky navbar with scroll blur effect
 │   ├── Footer.tsx          # Dark footer with navigation and contact info
 │   ├── Hero.tsx            # Full-height hero section with animations
-│   ├── TrustSection.tsx    # "Why ZeeInx" trust signals grid
+│   ├── TrustSection.tsx    # "Why Zeeinx" trust signals grid
 │   ├── WhatWeDo.tsx        # Core capabilities section
 │   ├── Services.tsx        # Services grid (4 cards)
 │   ├── Process.tsx         # 4-step delivery process timeline
@@ -123,7 +123,7 @@ All sections use `py-20 lg:py-28` with a `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
 
 ### Home (`/`)
 - **Hero** — Full-height section with headline, subheadline, stats, and dual CTAs
-- **Trust Section** — 4 icon cards explaining ZeeInx's differentiators
+- **Trust Section** — 4 icon cards explaining Zeeinx's differentiators
 - **What We Do** — 3 core capability blocks with icons
 - **Services** — 2×2 grid of service cards with hover animations
 - **Process** — 4-step horizontal timeline (vertical on mobile)
@@ -146,7 +146,7 @@ Push to your connected repository branch to trigger an automatic deploy.
 
 ## Contact
 
-**ZeeInx Ltd**
+**Zeeinx Ltd**
 Churchill House, 120 Bunns Ln, Mill Hill, London, UK
 Phone: +44 203 097 1597
 Email: info@zeeinx.com

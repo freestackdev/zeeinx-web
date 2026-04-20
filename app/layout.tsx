@@ -18,7 +18,7 @@ function metadataBaseUrl() {
 
 export const metadata: Metadata = {
   metadataBase: metadataBaseUrl(),
-  title: 'ZeeInx | Serialization Consulting',
+  title: 'Zeeinx | Serialization Consulting',
   description:
     'UK-based global serialization and compliance consulting for life sciences. Helping pharmaceutical and healthcare companies achieve regulatory compliance, system validation, and seamless serialization implementation.',
   keywords: [
@@ -30,20 +30,20 @@ export const metadata: Metadata = {
     'L4 system validation',
     'pharma serialization',
     'life sciences consulting',
-    'ZeeInx',
+    'Zeeinx',
   ],
-  authors: [{ name: 'ZeeInx' }],
+  authors: [{ name: 'Zeeinx' }],
   openGraph: {
-    title: 'ZeeInx | Serialization Consulting',
+    title: 'Zeeinx | Serialization Consulting',
     description:
       'Global serialization and compliance consulting for life sciences. UK-based experts in pharma serialization, EU FMD implementation, and regulatory compliance.',
     type: 'website',
     locale: 'en_GB',
-    siteName: 'ZeeInx',
+    siteName: 'Zeeinx',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ZeeInx | Serialization Consulting',
+    title: 'Zeeinx | Serialization Consulting',
     description:
       'UK-based global serialization and compliance consulting for life sciences.',
   },

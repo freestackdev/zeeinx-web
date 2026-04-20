@@ -5,18 +5,18 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | ZeeInx',
-  description: 'Terms of Service for ZeeInx Serialization Consulting — the terms governing use of our website and services.',
+  title: 'Terms of Service | Zeeinx',
+  description: 'Terms of Service for Zeeinx Serialization Consulting — the terms governing use of our website and services.',
 };
 
 const sections = [
   {
     title: '1. Introduction',
-    content: `These Terms of Service ("Terms") govern your use of the ZeeInx website located at zeeinx.com and any related services provided by ZeeInx Ltd ("ZeeInx", "we", "us", or "our"). By accessing or using our website, you agree to be bound by these Terms. If you do not agree, please do not use our website.`,
+    content: `These Terms of Service ("Terms") govern your use of the Zeeinx website located at zeeinx.com and any related services provided by Zeeinx Ltd ("Zeeinx", "we", "us", or "our"). By accessing or using our website, you agree to be bound by these Terms. If you do not agree, please do not use our website.`,
   },
   {
-    title: '2. About ZeeInx',
-    content: `ZeeInx Ltd is a UK-registered consulting firm specialising in pharmaceutical serialization and regulatory compliance. Our registered office is at Churchill House, 120 Bunns Ln, Mill Hill, London, UK. We provide advisory and implementation services to pharmaceutical, healthcare, and life sciences organisations.`,
+    title: '2. About Zeeinx',
+    content: `Zeeinx Ltd is a UK-registered consulting firm specialising in pharmaceutical serialization and regulatory compliance. Our registered office is at Churchill House, 120 Bunns Ln, Mill Hill, London, UK. We provide advisory and implementation services to pharmaceutical, healthcare, and life sciences organisations.`,
   },
   {
     title: '3. Use of This Website',
@@ -32,11 +32,11 @@ We reserve the right to restrict or terminate your access to the website at any 
   },
   {
     title: '4. Intellectual Property',
-    content: `All content on this website — including text, graphics, logos, icons, images, and software — is the property of ZeeInx Ltd or its content suppliers and is protected by UK and international copyright and intellectual property law. You may view, print, and download content from this website for your own personal, non-commercial use only. Any other use requires our prior written permission.`,
+    content: `All content on this website — including text, graphics, logos, icons, images, and software — is the property of Zeeinx Ltd or its content suppliers and is protected by UK and international copyright and intellectual property law. You may view, print, and download content from this website for your own personal, non-commercial use only. Any other use requires our prior written permission.`,
   },
   {
     title: '5. Consulting Services',
-    content: `The information on this website is provided for general information purposes only and does not constitute professional regulatory or legal advice. Specific consulting services are governed by separate engagement agreements entered into between ZeeInx and the client. The existence of this website does not create any client relationship or professional obligation between ZeeInx and any visitor.`,
+    content: `The information on this website is provided for general information purposes only and does not constitute professional regulatory or legal advice. Specific consulting services are governed by separate engagement agreements entered into between Zeeinx and the client. The existence of this website does not create any client relationship or professional obligation between Zeeinx and any visitor.`,
   },
   {
     title: '6. Accuracy of Information',
@@ -44,7 +44,7 @@ We reserve the right to restrict or terminate your access to the website at any 
   },
   {
     title: '7. Limitation of Liability',
-    content: `To the fullest extent permitted by applicable law, ZeeInx Ltd shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from your use of this website or reliance on any information it contains. This includes, without limitation, loss of profits, business interruption, or loss of data. Nothing in these Terms limits our liability for death or personal injury caused by our negligence, or for fraudulent misrepresentation.`,
+    content: `To the fullest extent permitted by applicable law, Zeeinx Ltd shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from your use of this website or reliance on any information it contains. This includes, without limitation, loss of profits, business interruption, or loss of data. Nothing in these Terms limits our liability for death or personal injury caused by our negligence, or for fraudulent misrepresentation.`,
   },
   {
     title: '8. Third-Party Links',
@@ -66,7 +66,7 @@ We reserve the right to restrict or terminate your access to the website at any 
     title: '12. Contact',
     content: `If you have any questions about these Terms, please contact us at:
 
-ZeeInx Ltd
+Zeeinx Ltd
 Churchill House, 120 Bunns Ln, Mill Hill, London, UK
 Email: info@zeeinx.com
 Phone: +44 203 097 1597`,
@@ -106,7 +106,7 @@ export default function TermsOfServicePage() {
         <section className="py-16 lg:py-24 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-gray-500 leading-relaxed mb-12 text-base border-l-4 border-cyan-400 pl-5">
-              Please read these Terms of Service carefully before using the ZeeInx website. By accessing or using our site you agree to these terms.
+              Please read these Terms of Service carefully before using the Zeeinx website. By accessing or using our site you agree to these terms.
             </p>
 
             <div className="flex flex-col gap-10">
@@ -124,7 +124,7 @@ export default function TermsOfServicePage() {
 
             <div className="mt-14 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <p className="text-xs text-gray-400">
-                &copy; {new Date().getFullYear()} ZeeInx Ltd. All rights reserved.
+                &copy; {new Date().getFullYear()} Zeeinx Ltd. All rights reserved.
               </p>
               <Link
                 href="/privacy-policy"

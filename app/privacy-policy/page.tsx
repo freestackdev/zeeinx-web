@@ -5,14 +5,14 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | ZeeInx',
-  description: 'Privacy Policy for ZeeInx Serialization Consulting — how we collect, use, and protect your personal data.',
+  title: 'Privacy Policy | Zeeinx',
+  description: 'Privacy Policy for Zeeinx Serialization Consulting — how we collect, use, and protect your personal data.',
 };
 
 const sections = [
   {
     title: '1. Who We Are',
-    content: `ZeeInx Ltd ("ZeeInx", "we", "us", or "our") is a UK-registered consulting firm specialising in pharmaceutical serialization and regulatory compliance. Our registered office is at Churchill House, 120 Bunns Ln, Mill Hill, London, UK. We are committed to protecting and respecting your privacy in accordance with the UK GDPR and the Data Protection Act 2018.`,
+    content: `Zeeinx Ltd ("Zeeinx", "we", "us", or "our") is a UK-registered consulting firm specialising in pharmaceutical serialization and regulatory compliance. Our registered office is at Churchill House, 120 Bunns Ln, Mill Hill, London, UK. We are committed to protecting and respecting your privacy in accordance with the UK GDPR and the Data Protection Act 2018.`,
   },
   {
     title: '2. Information We Collect',
@@ -21,7 +21,7 @@ const sections = [
 • Contact information: name, email address, telephone number, and company name submitted via our contact form or by email.
 • Enquiry content: the message or details you provide when making an enquiry.
 • Usage data: information about how you interact with our website, including IP address, browser type, pages visited, and time spent on each page. This data is collected through anonymised analytics and does not identify you personally.
-• Communications data: records of correspondence between you and ZeeInx.`,
+• Communications data: records of correspondence between you and Zeeinx.`,
   },
   {
     title: '3. How We Use Your Information',
@@ -80,7 +80,7 @@ To exercise any of these rights, please contact us at info@zeeinx.com. We will r
     title: '11. Contact Us',
     content: `If you have any questions about this Privacy Policy or our data practices, or if you wish to exercise your data subject rights, please contact us at:
 
-ZeeInx Ltd
+Zeeinx Ltd
 Churchill House, 120 Bunns Ln, Mill Hill, London, UK
 Email: info@zeeinx.com
 Phone: +44 203 097 1597
@@ -122,7 +122,7 @@ export default function PrivacyPolicyPage() {
         <section className="py-16 lg:py-24 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-gray-500 leading-relaxed mb-12 text-base border-l-4 border-cyan-400 pl-5">
-              This policy explains how ZeeInx Ltd collects, uses, and protects personal data provided by visitors to our website and individuals who contact us. Please read it carefully.
+              This policy explains how Zeeinx Ltd collects, uses, and protects personal data provided by visitors to our website and individuals who contact us. Please read it carefully.
             </p>
 
             <div className="flex flex-col gap-10">
@@ -140,7 +140,7 @@ export default function PrivacyPolicyPage() {
 
             <div className="mt-14 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <p className="text-xs text-gray-400">
-                &copy; {new Date().getFullYear()} ZeeInx Ltd. All rights reserved.
+                &copy; {new Date().getFullYear()} Zeeinx Ltd. All rights reserved.
               </p>
               <Link
                 href="/terms-of-service"

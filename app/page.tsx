@@ -9,7 +9,7 @@ import Process from '@/components/Process';
 import CTASection from '@/components/CTASection';
 
 export const metadata: Metadata = {
-  title: 'ZeeInx | Serialization Consulting — Global Pharma Compliance',
+  title: 'Zeeinx | Serialization Consulting — Global Pharma Compliance',
   description:
     'UK-based global serialization and compliance consulting for life sciences. Experts in EU FMD, EMVO, L4 system validation, and end-to-end serialization implementation.',
 };

@@ -3,7 +3,7 @@ import { Network } from 'lucide-react';
 import ServicePageLayout, { type ServiceDetail } from '@/components/shared/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'EU Hub Compliance (EMVO) | ZeeInx',
+  title: 'EU Hub Compliance (EMVO) | Zeeinx',
   description:
     'Complete EU Hub onboarding and ongoing EMVO compliance management for pharmaceutical manufacturers and marketing authorisation holders.',
 };
@@ -13,9 +13,9 @@ const service: ServiceDetail = {
   title: 'EU Hub Compliance (EMVO)',
   subtitle: 'European Medicines Verification Organisation Onboarding & Management',
   heroDescription:
-    'Connecting your organisation to the European Medicines Verification System and maintaining ongoing EMVO compliance — managed end to end by ZeeInx specialists.',
+    'Connecting your organisation to the European Medicines Verification System and maintaining ongoing EMVO compliance — managed end to end by Zeeinx specialists.',
   overview:
-    'The European Medicines Verification Organisation (EMVO) operates the EU Hub at the centre of the European Medicines Verification System (EMVS). All pharmaceutical manufacturers and marketing authorisation holders placing prescription medicines on European markets are required to upload serialisation data to the EU Hub and maintain connectivity with national medicines verification systems (NMVOs). ZeeInx provides complete EU Hub onboarding support — from initial EMVO registration and technical testing through to live production upload — and offers ongoing managed compliance services to ensure continued adherence as systems and requirements evolve.',
+    'The European Medicines Verification Organisation (EMVO) operates the EU Hub at the centre of the European Medicines Verification System (EMVS). All pharmaceutical manufacturers and marketing authorisation holders placing prescription medicines on European markets are required to upload serialisation data to the EU Hub and maintain connectivity with national medicines verification systems (NMVOs). Zeeinx provides complete EU Hub onboarding support — from initial EMVO registration and technical testing through to live production upload — and offers ongoing managed compliance services to ensure continued adherence as systems and requirements evolve.',
   icon: <Network size={22} />,
   highlights: [
     {

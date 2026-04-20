@@ -33,7 +33,7 @@ export default function TrustSection() {
     <SectionWrapper className="bg-gray-50/60" id="why-zeeinx">
       <div className="text-center mb-14">
         <span className="inline-block text-xs font-semibold text-cyan-500 uppercase tracking-widest mb-3">
-          Why ZeeInx
+          Why Zeeinx
         </span>
         <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 tracking-tight">
           Built for Pharmaceutical Excellence

@@ -80,7 +80,7 @@ export default function Navbar() {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
           aria-label="Main navigation"
         >
-          <Link href="/" className="flex items-center gap-3 group" aria-label="ZeeInx Home">
+          <Link href="/" className="flex items-center gap-3 group" aria-label="Zeeinx Home">
             <div className="w-9 h-9 rounded-lg bg-navy-900 dark:bg-navy-700 flex items-center justify-center group-hover:bg-cyan-500 transition-colors duration-200">
               <svg
                 width="20"
@@ -101,7 +101,7 @@ export default function Navbar() {
                   isScrolled ? 'text-navy-900 dark:text-white' : 'text-white'
                 )}
               >
-                ZeeInx
+                Zeeinx
               </span>
               <span
                 className={cn(
@@ -180,7 +180,7 @@ export default function Navbar() {
                   </svg>
                 </div>
                 <div className="flex flex-col leading-tight">
-                  <span className="font-bold text-base text-white tracking-tight">ZeeInx</span>
+                  <span className="font-bold text-base text-white tracking-tight">Zeeinx</span>
                   <span className="text-xs text-white/60">Serialization Consulting</span>
                 </div>
               </Link>

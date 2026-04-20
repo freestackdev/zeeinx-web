@@ -3,7 +3,7 @@ import { ShieldCheck } from 'lucide-react';
 import ServicePageLayout, { type ServiceDetail } from '@/components/shared/ServicePageLayout';
 
 export const metadata: Metadata = {
-  title: 'EU FMD Implementation | ZeeInx',
+  title: 'EU FMD Implementation | Zeeinx',
   description:
     'Full-scope EU Falsified Medicines Directive implementation — packaging line integration, NMVS connectivity, verification workflows, and go-live support.',
 };
@@ -15,7 +15,7 @@ const service: ServiceDetail = {
   heroDescription:
     'Delivering complete EU FMD compliance, from packaging line serialization and aggregation through to NMVS connectivity and end-to-end verification workflow implementation.',
   overview:
-    'The EU Falsified Medicines Directive (Directive 2011/62/EU) and its Delegated Regulation (EU) 2016/161 mandate the serialization and verification of prescription medicines across all EU member states. Compliance requires coordinated implementation across manufacturing, packaging, logistics, and IT systems. ZeeInx provides full-scope EU FMD implementation services — taking responsibility for every layer from pack-level unique identifier encoding and aggregation, through supply chain data flows, to the national medicines verification system (NMVS) connectivity required for end-point verification at dispensing. Our implementation approach is methodology-driven, risk-aware, and built around the specific operational and systems environment of each client.',
+    'The EU Falsified Medicines Directive (Directive 2011/62/EU) and its Delegated Regulation (EU) 2016/161 mandate the serialization and verification of prescription medicines across all EU member states. Compliance requires coordinated implementation across manufacturing, packaging, logistics, and IT systems. Zeeinx provides full-scope EU FMD implementation services — taking responsibility for every layer from pack-level unique identifier encoding and aggregation, through supply chain data flows, to the national medicines verification system (NMVS) connectivity required for end-point verification at dispensing. Our implementation approach is methodology-driven, risk-aware, and built around the specific operational and systems environment of each client.',
   icon: <ShieldCheck size={22} />,
   highlights: [
     {

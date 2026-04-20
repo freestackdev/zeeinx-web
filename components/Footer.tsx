@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="pt-16 pb-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 border-b border-white/10">
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 group mb-5" aria-label="ZeeInx Home">
+            <Link href="/" className="flex items-center gap-3 group mb-5" aria-label="Zeeinx Home">
               <div className="w-9 h-9 rounded-lg bg-cyan-500 flex items-center justify-center">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                   <path d="M3 4H17L10 16L3 4Z" stroke="white" strokeWidth="1.8" strokeLinejoin="round" />
@@ -25,7 +25,7 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="flex flex-col leading-tight">
-                <span className="font-bold text-base text-white tracking-tight">ZeeInx</span>
+                <span className="font-bold text-base text-white tracking-tight">Zeeinx</span>
                 <span className="text-xs text-white/50">Serialization Consulting</span>
               </div>
             </Link>
@@ -35,14 +35,14 @@ export default function Footer() {
             <div className="flex items-center gap-3 mt-6">
               <a
                 href="#"
-                aria-label="ZeeInx on LinkedIn"
+                aria-label="Zeeinx on LinkedIn"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/60 hover:bg-cyan-500 hover:text-white transition-all duration-200"
               >
                 <Linkedin size={16} />
               </a>
               <a
                 href="#"
-                aria-label="ZeeInx on Twitter"
+                aria-label="Zeeinx on Twitter"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/60 hover:bg-cyan-500 hover:text-white transition-all duration-200"
               >
                 <Twitter size={16} />
@@ -121,7 +121,7 @@ export default function Footer() {
 
         <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/30 text-xs">
-            &copy; {year} ZeeInx Ltd. All rights reserved.
+            &copy; {year} Zeeinx Ltd. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-white/30 text-xs hover:text-white/60 transition-colors">

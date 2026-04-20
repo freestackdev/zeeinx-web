@@ -38,7 +38,7 @@ export default function WhatWeDo() {
             <span className="text-navy-600">End to End</span>
           </h2>
           <p className="text-gray-500 leading-relaxed text-base mb-8">
-            ZeeInx delivers specialized serialization consulting to pharmaceutical and
+            Zeeinx delivers specialized serialization consulting to pharmaceutical and
             healthcare companies worldwide. We combine deep regulatory knowledge with
             hands-on technical capability to guide organizations through every stage
             of their compliance journey — from initial strategy through to live
