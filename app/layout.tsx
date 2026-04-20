@@ -9,7 +9,15 @@ const inter = Inter({
   display: 'swap',
 });
 
+function metadataBaseUrl() {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return new URL(explicit);
+  if (process.env.VERCEL_URL) return new URL(`https://${process.env.VERCEL_URL}`);
+  return new URL('http://localhost:3000');
+}
+
 export const metadata: Metadata = {
+  metadataBase: metadataBaseUrl(),
   title: 'ZeeInx | Serialization Consulting',
   description:
     'UK-based global serialization and compliance consulting for life sciences. Helping pharmaceutical and healthcare companies achieve regulatory compliance, system validation, and seamless serialization implementation.',
